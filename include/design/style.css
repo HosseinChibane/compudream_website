@@ -1,0 +1,288 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff') format('woff');
+}
+body{
+background:#C4C9CA url('mainbody_texture.gif');
+}
+/* Menu deroulant */
+.no-js #navigation li:hover ul {
+display:block;
+}  
+#navigation {
+width: 560px;
+margin-top:7px;
+position: relative;
+display: block;
+font-style: bold;
+font-size: 14px;
+font-family: 'Open Sans';
+margin:0 auto;
+z-index: 5;
+list-style:none;
+top:-20px;
+}  
+#navigation a {
+display:block;
+width: 100px;
+text-decoration:none;
+z-index: 1;
+}
+#navigation ul {
+padding:0;
+margin:0;
+}  
+#navigation li {
+position:relative;
+float:left;
+list-style-type:none;
+}  
+#navigation ul:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}  
+#navigation li a {
+display:block;
+padding:10px 20px;
+color:#eee;
+text-decoration:none;
+}  
+#navigation li a:focus {
+outline:none;
+text-decoration:underline;
+}   
+#navigation a span {
+display:block;
+float:right;
+margin-left:5px;
+}  
+#navigation ul ul {
+display:none;
+width:100%;
+position:absolute;
+left:0; background:#5E980B;
+}  
+#navigation ul ul li {
+float:none;
+}  
+#navigation ul ul a {
+padding:5px 10px;
+font-size:14px;
+}  
+#navigation ul ul a:hover {
+color:#FFFFFF
+}
+.cssgradients nav {
+background-image:-moz-linear-gradient(0% 65px 90deg, #5E980B, #85B10F);
+background-image:-webkit-gradient(linear, 0% 0%, 0% 50%, from(#5E980B), to(#5E980B));
+}
+.cssgradients nav ul ul li{
+background-image:-moz-linear-gradient(0% 65px 90deg, #85B10F, #85B10F);
+background-image:-webkit-gradient(linear, 0% 0%, 0% 50%, from(#85B10F), to(#85B10F));
+}  
+.cssgradients nav li:hover {
+background-image:-moz-linear-gradient(0% 100px 90deg, #5E980B, #5E980B);
+background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5E980B), to(#5E980B));
+}
+.rgba nav ul ul li {
+border-left:1px solid rgba(0,0,0,0.1);
+border-right:1px solid rgba(0,0,0,0.1);
+}
+.rgba nav ul ul a:hover {
+background-color:rgba(0,0,0.9);
+}
+.csstransforms ul a span {
+-moz-transform:rotate(-180deg);
+-webkit-transform:rotate(-180deg);}
+div.piedpage {
+background:url('footer.gif') repeat-x scroll transparent;
+height:59px;
+text-align: center;
+font-size: 11px;
+font-family: Arial,Helvetica,sans-serif;
+margin:30px 0 0 0;
+clear:both;
+}
+div.piedpage p {
+	color: rgb(170, 170, 170);
+	text-align: center;
+	font-weight: normal;
+	padding:25px 0 0 0;
+	text-transform: uppercase;
+}
+div.piedpage a, div.piedpage a:visited {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    font-weight: normal;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+div.piedpage a:hover, div.piedpage a:visited:hover {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+div.administration{
+margin: 0 auto;
+position: static;
+width:100%;
+margin-top: 0;
+margin-bottom: 0;
+}
+div.arrondi{
+text-align: center;
+border-radius: 6px 6px 6px 6px;
+-moz-border-radius: 6px; 
+-webkit-border-radius: 6px; 
+border: 1px solid #000000;
+/* Anciens navigateurs */
+background: darkturquoise url("arrondi-bg.png") repeat-y left;
+-o-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;
+/* Internet Explorer */
+*background: darkturquoise;
+background: darkturquoise\0/;
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr=#FF6495ED, endColorstr=#FF00CED1);
+}
+div.arrondi{
+/* Opera */
+			background: darkturquoise url("arrondi-bg.svg");
+			/* Navigateurs récents */
+			background-image: -webkit-gradient(
+				linear,
+				left top, right top,
+				from(cornflowerblue),
+				to(darkturquoise)
+			);
+			background-image: -webkit-linear-gradient(
+				left,
+				cornflowerblue,
+				darkturquoise
+			);
+			background-image: -moz-linear-gradient(
+				left,
+				cornflowerblue,
+				darkturquoise
+			);
+			background-image: -o-linear-gradient(
+				left,
+				cornflowerblue,
+				darkturquoise
+			);
+			background-image: linear-gradient(
+				left,
+				cornflowerblue,
+				darkturquoise
+			);
+		}
+div.choix{
+width:800px;
+height:600px;
+position: relative;
+top: 50%;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+background:rgba(0,0,0,0.5);
+display: block;
+font-style: bold;
+font-size: 14px;
+font-family: 'Open Sans';
+color:white;
+}
+
+.highlight img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+-moz-opacity: 0.5;
+opacity: 0.5;
+}
+
+.highlight:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+#navigationadmin{
+width: 840px;
+list-style:none;
+position: relative;
+display: block;
+top: -20px;
+margin:0 auto;
+z-index: 5;
+}
+#navigationadmin a {
+display:block;
+width: 100px;
+text-decoration:none;
+z-index: 5;
+}
+#navigationadmin ul {
+padding:0;
+margin:0;
+}  
+#navigationadmin li {
+position:relative;
+float:left;
+list-style-type:none;
+}  
+#navigationadmin ul:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}  
+#navigationadmin li a {
+display:block;
+padding:10px 20px;
+color:#eee;
+text-decoration:none;
+}  
+#navigationadmin li a:focus {
+outline:none;
+text-decoration:underline;
+}   
+#navigationadmin a span {
+display:block;
+float:right;
+margin-left:5px;
+}  
+#navigationadmin ul ul {
+display:none;
+width:100%;
+position:absolute;
+left:0; background:#5E980B;
+}  
+#navigationadmin ul ul li {
+float:none;
+}  
+#navigationadmin ul ul a {
+padding:5px 10px;
+font-size:14px;
+}  
+#navigationadmin ul ul a:hover {
+color:#FFFFFF
+}
